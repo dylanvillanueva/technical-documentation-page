@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>JavaScript Documentation</h1>
+        </header>
+        <ul>
+            <li><a href="#an_introduction_to_javascript" class="nav-link">An Introduction to JavaScript</a></li>
+            <li><a href="#manuals_and_specifications" class="nav-link">Manuals and Specifications</a></li>
+            <li><a href="#code_editors" class="nav-link">Code Editors</a></li>
+            <li><a href="#developer_console" class="nav-link">Developer Console</a></li>
+            <li><a href="#hello_world" class="nav-link">Hello World</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="an_introduction_to_javascript" class="main-section">
+            <header>
+                <h2>An Introduction to JavaScript</h2>
+            </header>
+            <p>Let's see what's so special about JavaScript, what we can acheive with it, and what other technologies
+                play well with it.</p>
+            <h3>What is JavaScript?</h3>
+            <p><em>JavaScript</em> was initially created to "make web pages alive."</p>
+        </section>
+        <section id="manuals_and_specifications" class="main-section">
+            <header>
+                <h2>Manuals and Specifications</h2>
+            </header>
+            <p>This book is a <em>tutorial</em>. It aims to help you gradually learn the language. But once you're
+                familiar with the basics, you'll need other resources.</p>
+            <h3>Specification</h3>
+            <p><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">The ECMA-262
+                    specification</a> contains the most in-depth, detailed, and formalized information about Javascript.
+                It defines the language.</p>
+        </section>
+        <section id="code_editors" class="main-section">
+            <header>
+                <h2>Code Editors</h2>
+            </header>
+            <p>A code editor is the place where programmers spend most of their time.</p>
+            <p>There are two main types of code editors: IDEs and lightweight editors. Many people use one tool of each
+                type.</p>
+            <h3>IDE</h3>
+            <p>The term <a href="https://en.wikipedia.org/wiki/Integrated_development_environment">IDE</a> (Integrated
+                Development Environment) refers to a powerful editor with many features that usually operates on a
+                "whole project." As the name suggests, it's not just an editor, but a full-scale "development
+                environment."</p>
+            <p>An IDE loads the project (which can be many files), allows navigation between files, provides
+                autocompletion based on the whole project (not just the open file), and integrates with a version
+                management system (like <a href="https://git-scm.com/">git</a>), a testing environment, and other
+                "project-level" stuff.</p>
+            <p>If you haven't selected an IDE yet, consider the following options:</p>
+            <ul>
+                <li><a href="https://code.visualstudio.com/">Visual Studio Code</a> (cross-platform, free)</li>
+                <li><a href="https://www.jetbrains.com/webstorm/">WebStorm</a> (cross-platform, paid)</li>
+            </ul>
+            <p>For Windows, there's also "Visual Studio", not to be confused with "Visual Studio Code." "Visual Studio"
+                is a paid and mighty Windows-only editor, well-suited for the .NET platform. It's also good at
+                JavaScript. There's also a free version <a
+                    href="https://visualstudio.microsoft.com/vs/community/">Visual Studio Community</a>.</p>
+            <p>Many IDEs are paid, but have a trial period. Their cost is usually negligible compared to a qualifed
+                developer's salary, so just choose the best one for you.</p>
+            <h3>Lightweight editors</h3>
+            <p>"Lightweight editors" are not as powerful as IDEs, but they're fast, elegant, and simple.</p>
+            <p>They are mainly used to open and edit a file instantly.</p>
+            <p>The main difference between a "lightweight editor" and an "IDE" is that an IDE works on a project-level,
+                so it loads much more data on start, analyzes the project structure if needed, and so on. A lightweight
+                editor is much faster if we need only one file.</p>
+            <p>In practice, lightweight editors may have a lot of plugins including directory-level syntax analyzers and
+                autocompleters, so there's no strict border between a lightweight editor and an IDE.</p>
+            <p>There are many options, for instance:</p>
+            <ul>
+                <li><a href="https://www.sublimetext.com/">Sublime Text</a> (cross-platform, shareware)</li>
+                <li><a href="https://notepad-plus-plus.org/">Notepad++</a> (Windows, free)</li>
+                <li><a href="https://www.vim.org/">Vim</a> and <a href="https://www.gnu.org/software/emacs/">Emacs</a>
+                    are also cool if you know how to use them</li>
+            </ul>
+        </section>
+        <section id="developer_console" class="main-section">
+            <header>
+                <h2>Developer Console</h2>
+            </header>
+            <p>Code is prone to errors. You will quite likely make errors... Oh, what am I talking about? Your are
+                <em>absolutely</em> going to make errors, at least if you're a human, not a <a
+                    href="https://en.wikipedia.org/wiki/Bender_(Futurama)">robot</a>.</p>
+            <p>But in the browser, users don't see errors by default. So, if something goes wrong in the script, we
+                won't see what's broken and can't fix it.</p>
+        </section>
+        <section id="hello_world" class="main-section">
+            <header>
+                <h2>Hello World</h2>
+            </header>
+            <p>This part of the tutorial is about core JavaScript, the language itself.</p>
+            <p>But we need a working environment to run our scripts and, since this book is online, the browser is a
+                good choice. We'll keep the amount of browser-specific commands (like <code>alert</code>) to a minimum
+                so that you don't spend time on them if you plan to concentrate on another environment (like Node.js).
+                We'll focus on JavaScript in the browser in the next part of the tutorial.</p>
+            <p>So first, let's see how we attach a script to a webpage. For server-side environments (like Node.js), you
+                can execute the script with a command like <code>node my.js</code>.</p>
+            <h3>The "script" tag</h3>
+            <p>JavaScript programs can be inserted almost anywhere into an HTML document using the
+                <code>&lt;script&gt;</code> tag.</p>
+            <p>For instance:</p>
+            <div class="code">
+                <code>
+                        &lt;!DOCTYPE HTML&gt;
+                        <br>
+                        &lt;html&gt;
+                        <br><br>
+                        &lt;body&gt;
+                        <br><br>
+                        <span class="tabbed-one">&lt;p&gt;Before the script...&lt;/p&gt;</span>
+                        <br><br>
+                        <span class="tabbed-one">&lt;script&gt;</span>
+                        <br>
+                        <span class="tabbed-two">alert( 'Hello, world!' );</span>
+                        <br>
+                        <span class="tabbed-one">&lt;/script&gt;</span>
+                        <br><br>
+                        <span class="tabbed-one">&lt;p&gt;...After the script.&lt;/p&gt;</span>
+                        <br><br>
+                        &lt;/body&gt;
+                        <br><br>
+                        &lt;/html&gt;
+                    </code>
+            </div>
+            <p>The <code>&lt;script&gt;</code> tag contains JavaScript code which is automatically executed when the
+                browswer processes the tag.</p>
+        </section>
+    </main>
+</body>
+
+</html>
